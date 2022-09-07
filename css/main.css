@@ -1,0 +1,213 @@
+@import "base.css";
+
+/*
+    ===========================================================================
+    +++++++++++++++++++++++++++++++ MEDIA QUERIES ++++++++++++++++++++++++++++++++++++
+    ===========================================================================
+*/
+@media screen and (max-width: 64em) {
+  .heading--h3 {
+    display: inline-block;
+  }
+
+  html {
+    font-size: 60%;
+  }
+  .header__top {
+    height: 50vh;
+  }
+
+  .header__bottom {
+    height: 15vh;
+  }
+  /*
+    ============ ABOUT ==================
+  */
+  .about {
+    text-align: center;
+  }
+
+  .about__content {
+    flex-flow: column-reverse wrap;
+    align-items: center;
+  }
+  .about__image {
+    height: 16vh;
+    margin: 5rem 0;
+  }
+  .about__text {
+    height: auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  /*
+    ============ TESTEMONIALS ==================
+  */
+  .testimonials {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .testimonials__card:nth-of-type(2) {
+    transform: translateX(0);
+  }
+
+  .testimonials__content {
+    text-align: center;
+  }
+
+  .testimonials__card {
+    text-align: left;
+  }
+  /*
+    ============ PRICING & sponsers ==================
+  */
+  .pricing,
+  .sponsers {
+    text-align: center;
+  }
+
+  /*
+    ===================== FOOTER ====================
+  */
+  .footer {
+    height: 40vh;
+  }
+}
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  .header__top,
+  .header__bottom {
+    padding: 0 0 0 3rem;
+  }
+
+  .header__stats {
+    width: 22rem;
+  }
+
+  .about,
+  .testimonials,
+  .sponsers {
+    padding: 7rem 3rem;
+  }
+  .pricing {
+    padding: 7rem 3rem 0;
+  }
+
+  .pricing__card__info--ul {
+    padding: 4rem 0;
+  }
+}
+
+/*
++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+@media (max-width: 700px) {
+  html {
+    font-size: 35%;
+  }
+
+  .navbar {
+    padding: 1rem 0.5rem;
+  }
+  .header__top,
+  .header__bottom {
+    padding: 0 0 0 0.5rem;
+  }
+
+  .about,
+  .testimonials,
+  .sponsers {
+    padding: 7rem 0.5rem;
+  }
+  .pricing {
+    padding: 7rem 0.5rem 0;
+  }
+
+  .navbar__item:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  .header__top {
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+  .header__bottom {
+    width: 100%;
+  }
+
+  .testimonials__card {
+    flex-direction: column;
+    padding: 6rem 5rem;
+    max-width: 60rem;
+    text-align: center;
+  }
+
+  .pricing__content {
+    flex-direction: column;
+  }
+
+  .pricing__card:nth-last-of-type(2) {
+    transform: translateY(0);
+  }
+
+  .pricing__card:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    height: 70vh;
+    justify-content: center;
+    background-image: linear-gradient(
+      45deg,
+      var(--color-secondary),
+      var(--color-primary)
+    );
+    clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+  }
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__lists {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer__list {
+    margin-right: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 4rem;
+    align-self: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .header__stats {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 30%;
+  }
+}
